@@ -1,0 +1,140 @@
+/* Auth Container to mimic chat-app-container */
+.auth-container {
+    /*
+     * Remove the height property here.
+     * The wrapper will now handle the vertical centering.
+     * Remove max-width and max-height from here if you prefer the parent wrapper to control size.
+     */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 500px;
+    
+
+    width: 100%; 
+    margin: 0 auto;
+    
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Takes up the full viewport height */
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box;
+}
+
+/* Auth Header to mimic chat-header */
+.auth-header {
+    width: 100%;
+    background: linear-gradient(to right, #4a90e2, #7b68ee); 
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.auth-header-title {
+    font-size: 28px;
+    font-weight: 700; 
+    letter-spacing: 0.05em; 
+    margin: 0;
+}
+
+.auth-header-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* Auth Form and inputs */
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 25px; 
+    font-size: 16px;
+    outline: none; 
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #333;
+    background-color: #fcfcfc;
+}
+
+.auth-form input:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
+}
+
+/* Auth button to mimic chat-send-button */
+.auth-button {
+    background-color: #007bff; 
+    color: white;
+    padding: 15px; 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.auth-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* General messages */
+.auth-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.auth-message-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-switch-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-switch-link a {
+    color: #007bff; /* Primary blue color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.auth-switch-link a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
